@@ -10,4 +10,10 @@ public interface BeerService {
 	
 	public ResponseEntity<BeerDto> getBeer(UUID beerId);
 
+	public BeerDto createBear(BeerDto beerDto);
+
+	public void updateBeer(UUID beerId, BeerDto beerDto);
+
+	public void  deleteBeer(UUID beerId);
+
 }
